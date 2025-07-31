@@ -1,0 +1,24 @@
+{
+  "env": {
+    "CLAUDE_CODE_ENABLE_TELEMETRY": "0",
+    "DISABLE_TELEMETRY": "0"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(make:*)",
+      "Bash(fvm:*)",
+      "Bash(git diff:*)",
+      "Bash(git:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(echo:*)",
+      "Bash(xargs:*)",
+      "Bash(say:*)",
+      "WebFetch(domain:pub.dev)",
+      "WebFetch(domain:firebase.google.com)"
+    ]
+  }
+}
