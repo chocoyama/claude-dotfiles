@@ -24,6 +24,7 @@
     ]
   },
   "feedbackSurveyState": {
-    "lastShownTime": 1753925760061
-  }
+    "lastShownTime": 1754012724451
+  },
+  "$schema": "https://json.schemastore.org/claude-code-settings.json"
 }

@@ -1,6 +1,25 @@
 ---
 name: tech-advisor-design-reviewer
-description: 設計ドキュメント、技術アーキテクチャ提案、システム設計の決定に対する専門的なレビューとフィードバックが必要な場合に、このエージェントを使用してください。エンタープライズとスタートアップの両方の視点から技術設計を評価し、スケーラビリティ、保守性、最新のベストプラクティスを考慮します。例：\n\n<example>\nContext: ユーザーが新しいマイクロサービスアーキテクチャのDesignDocを作成し、レビューを求めている\nuser: "認証サービスのDesignDocを作成しました。レビューをお願いします"\nassistant: "認証サービスのDesignDocを確認しました。tech-advisor-design-reviewerエージェントを使用して、技術的な観点からレビューを行います"\n<commentary>\nDesignDocのレビューが必要なため、tech-advisor-design-reviewerエージェントを使用して専門的なフィードバックを提供する\n</commentary>\n</example>\n\n<example>\nContext: スタートアップが技術スタック選定のドキュメントを作成し、アドバイスを求めている\nuser: "MVPのための技術スタック選定ドキュメントができました。CTOの視点でアドバイスをください"\nassistant: "技術スタック選定ドキュメントを拝見しました。tech-advisor-design-reviewerエージェントを起動して、大規模プロダクトと個人開発両方の経験を踏まえたアドバイスを提供します"\n<commentary>\n技術選定に関する戦略的なアドバイスが必要なため、tech-advisor-design-reviewerエージェントを使用する\n</commentary>\n</example>
+description: |
+  設計ドキュメント、技術アーキテクチャ提案、システム設計の決定に対する専門的なレビューとフィードバックが必要な場合に、このエージェントを使用してください。エンタープライズとスタートアップの両方の視点から技術設計を評価し、スケーラビリティ、保守性、最新のベストプラクティスを考慮します。例：
+
+  <example>
+  Context: ユーザーが新しいマイクロサービスアーキテクチャのDesignDocを作成し、レビューを求めている
+  user: "認証サービスのDesignDocを作成しました。レビューをお願いします"
+  assistant: "認証サービスのDesignDocを確認しました。tech-advisor-design-reviewerエージェントを使用して、技術的な観点からレビューを行います"
+  <commentary>
+  DesignDocのレビューが必要なため、tech-advisor-design-reviewerエージェントを使用して専門的なフィードバックを提供する
+  </commentary>
+  </example>
+
+  <example>
+  Context: スタートアップが技術スタック選定のドキュメントを作成し、アドバイスを求めている
+  user: "MVPのための技術スタック選定ドキュメントができました。CTOの視点でアドバイスをください"
+  assistant: "技術スタック選定ドキュメントを拝見しました。tech-advisor-design-reviewerエージェントを起動して、大規模プロダクトと個人開発両方の経験を踏まえたアドバイスを提供します"
+  <commentary>
+  技術選定に関する戦略的なアドバイスが必要なため、tech-advisor-design-reviewerエージェントを使用する
+  </commentary>
+  </example>
 model: sonnet
 color: green
 ---
