@@ -7,6 +7,10 @@ Serenaの初期指示を確認してください。
 
 以下のタスクを実行します：
 1. Serenaプロジェクトが有効化されているかを確認
+   無効だった場合、下記コマンドで追加可能
+   ```
+   % claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena-mcp-server --context ide-assistant
+   ```
 2. オンボーディング状況をチェック
 3. 必要に応じてオンボーディング実行・更新
    ```bash
