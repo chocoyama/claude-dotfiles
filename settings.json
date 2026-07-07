@@ -1,31 +1,79 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "model": "opusplan",
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(/Users/chocoyama/.claude/skills/tree-pr/scripts/list-my-prs.sh:*)",
+      "Bash(/Users/chocoyama/.claude/skills/tree-pr/scripts/list-review-requested-prs.sh:*)",
+      "Bash(/Users/chocoyama/.claude/skills/tree-pr/scripts/list-my-merged-prs.sh:*)",
+      "Bash(gh api user *:*)",
+      "READ(*.md:*)",
+      "mcp__serena__search_for_pattern",
+      "mcp__serena__find_symbol",
+      "mcp__serena__list_dir",
+      "mcp__figma-desktop__get_design_context",
+      "mcp__figma-desktop__get_screenshot",
+      "mcp__chrome-devtools__take_snapshot",
+      "mcp__knowledge-server__get_file_content",
+      "mcp__knowledge-server__search_knowledge",
+      "mcp__dart__pub_dev_search",
+      "mcp__notion__notion-fetch",
+      "Bash(flutter --version:*)",
+      "mcp__serena__think_about_task_adherence",
+      "Skill(tree-pr)",
+      "Skill(tree-pr:*)",
+      "mcp__figma-desktop__get_variable_defs",
+      "mcp__dart__run_tests"
+    ],
+    "ask": [
+      "Bash(git push:*)"
+    ],
+    "defaultMode": "auto",
+    "additionalDirectories": [
+      "/private/tmp",
+      "/tmp"
+    ]
+  },
   "hooks": {
-    "Notification": [
+    "Stop": [
       {
-        "matcher": "",
         "hooks": [
           {
             "type": "command",
-            "command": "osascript -e 'display notification \"入力を待っています\" with title \"Claude Code\" sound name \"Glass\"' && say -r 200 \"確認をお待ちしています\""
+            "command": "say -r 200 '全てのタスクが完了しました'"
           }
         ]
       }
     ],
-    "Stop": [
+    "Notification": [
       {
-        "matcher": "",
         "hooks": [
           {
             "type": "command",
-            "command": "say -r 200 \"実行が完了しました\" && afplay /System/Library/Sounds/Glass.aiff"
+            "command": "say -r 200 '確認が必要です'"
           }
         ]
       }
     ]
   },
-  "feedbackSurveyState": {
-    "lastShownTime": 1754016473058
-  }
+  "enabledPlugins": {
+    "example-skills@anthropic-agent-skills": true,
+    "swift-lsp@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "teammateMode": "tmux",
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true,
+  "model": "claude-fable-5[1m]"
 }
